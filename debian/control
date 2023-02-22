@@ -1,15 +1,17 @@
 Source: visualino
 Section: electronics
-Maintainer: Víctor R. Ruiz <vrruiz@gmail.com>
+Priority: optional
+Maintainer: Miriam Ruiz <miriam@debian.org>
 Build-Depends: debhelper (>= 9),
     qtbase5-dev,
     qt5-qmake,
     libqt5webkit5-dev,
     libqt5serialport5-dev,
-    qttools5-dev-tools
+    qttools5-dev-tools,
+    qtwebengine5-dev,
+    libqt5webenginewidgets5
 Standards-Version: 3.9.6
 Homepage: http://www.visualino.net/
-Vcs-Git: git://github.com/vrruiz/visualino.git
 
 Package: visualino
 Architecture: any
@@ -17,7 +19,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
     libqt5network5,
     libqt5widgets5,
     libqt5webkit5,
-    libqt5serialport5
+    libqt5serialport5,
+    libqt5webenginewidgets5
 Description: Desktop visual environment to program Arduino
  Visualino embeds Bitbloq as a desktop application to
  offer a visual GUI to program Arduino.

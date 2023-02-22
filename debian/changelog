@@ -1,9 +1,18 @@
+visualino (0.7.4inniyah1) UNRELEASED; urgency=medium
+
+  * Added dependencies: qtwebengine5-dev and libqt5webenginewidgets5
+  * Fixed paths in debian/copyright
+
+ -- Miriam Ruiz <miriam@debian.org>  Wed, 22 Feb 2023 17:22:32 +0100
+
 visualino (0.7.4) wily; urgency=medium
+
   * Migration from QtWebView to QtWebEngine.
 
  -- Francisco J. Molina <fjmrobles@gmail.com>  Thu, 05 Feb 2023 19:15:10 +0000
 
 visualino (0.7.3) wily; urgency=medium
+
   * More variable types.
   * Blocks for interrupts.
   * Blocks for vectors.
