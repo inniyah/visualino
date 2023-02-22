@@ -9,7 +9,8 @@
 #include <QMainWindow>
 #include <QProcess>
 #include <QtSerialPort/QSerialPort>
-#include <QWebView>
+#include <QWebEngineView>
+#include <QWebChannel>
 
 namespace Ui {
 class MainWindow;
@@ -35,6 +36,7 @@ private:
     QList<GraphWidget *> graphList;
     QStringList documentHistory;
     JsWebHelpers *webHelper;
+    QWebChannel *webChannel;
     bool sourceChanging;
     bool sourceChanged;
     int documentHistoryStep;
@@ -48,6 +50,7 @@ private:
                            const QString &directory = "");
     void arduinoExec(const QString &action);
     void documentHistoryReset();
+    QVariant evaluateJavaScript(const QString code);
     QString escapeCharacters(const QString& string);
     QString getXml();
     QString getCode();
